@@ -26,7 +26,7 @@ function main()
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
 
-    var light = new THREE.PointLight( 0x00ced1);
+    var light = new THREE.PointLight( 0xffff00);
     light.position.set( 1, 1, 1 );
     scene.add( light );
 
