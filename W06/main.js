@@ -128,6 +128,11 @@ function main()
     scene.add( cube );
     loop();
     
-    function loop()
-    {
+    function loop() {
+	requestAnimationFrame( loop );
+        cube.rotation.x += 0.001;
+	cube.rotation.y += 0.001;
+        renderer.render( scene, camera );
+    }    
+    
 }
